@@ -1,0 +1,153 @@
+/* ========= GLOBAL ========= */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FFF8E8; /* Cream Soft */
+    color: #5A4B41;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-padding-top: 90px; /* sesuaikan tinggi navbar kamu */
+}
+
+
+/* WARNA */
+:root {
+    --cream: #FFF8E8;
+    --beige: #F7EEDB;
+    --gold-soft: #E7CBA9;
+    --brown-soft: #8F6E53;
+    --brown-dark: #5A4B41;
+}
+
+/* ========= NAVBAR ========= */
+.navbar {
+    background-color: var(--cream) !important;
+    padding: 16px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: var(--beige) !important;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--brown-dark) !important;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: var(--brown-soft) !important;
+}
+
+/* ========= HERO ========= */
+/* HERO BACKGROUND */
+.hero-banner {
+    height: 100vh;
+    background: url('../img/WhatsApp\ Image\ 2025-10-31\ at\ 03.29.52_72e392ff.jpg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Overlay agar warna foto lembut dan icon + teks terlihat */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.32); 
+    backdrop-filter: blur(2px);
+}
+
+/* TEKS HERO */
+.hero-text {
+    position: relative;
+    z-index: 2;
+    color: #FFF4DD; /* cream soft */
+    text-shadow: 0 3px 14px rgba(0, 0, 0, 0.7);
+}
+
+/* Baris kedua lebih tegas namun tetap soft */
+.hero-text span {
+    color: #FFE8C8;
+}
+
+/* SOCIAL ICONS di HERO */
+.hero-social-icons a {
+    color: #FFE7C1; /* cream soft pastel */
+    font-size: 34px;
+    margin: 0 14px;
+    transition: 0.3s ease;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover soft glow gold pastel */
+.hero-social-icons a:hover {
+    transform: scale(1.2);
+    color: #FFD4A3; /* soft peach gold */
+    text-shadow: 0 0 12px rgba(255, 212, 150, 0.7);
+}
+
+
+
+
+/* ========= SECTION ========= */
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--brown-soft);
+    margin-bottom: 20px;
+}
+
+/* ========= CARD TEAM / PROGRAM ========= */
+.card-cute,
+.item {
+    background: var(--beige);
+    padding: 20px;
+    border-radius: 18px;
+    border: 2px solid var(--gold-soft);
+    transition: 0.3s;
+}
+
+.card-cute:hover,
+.item:hover {
+    transform: translateY(-8px);
+    background: var(--cream);
+}
+
+/* ========= TEAM PHOTO ========= */
+.team-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.item:hover .team-foto {
+    transform: scale(1.05);
+}
+
+/* ========= GALERI ========= */
+#galeri img {
+    border-radius: 16px;
+    border: 3px solid var(--gold-soft);
+    transition: 0.3s;
+}
+
+#galeri img:hover {
+    transform: scale(1.05);
+}
+
+/* ========= FOOTER ========= */
+footer {
+    background-color: var(--beige);
+    color: var(--brown-dark);
+    padding-top: 30px;
+    border-top: 3px solid var(--gold-soft);
+}
+
